@@ -4,7 +4,7 @@ from flask_restful import Resource, Api, reqparse, fields, marshal_with, abort
 
 app = Flask(__name_)
 app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///database.db'
-db = SQLAlchemy(app)
+db = SQLAlchemy(app) 
 api = Api(app)
 
 class UserModel(db.Model):
