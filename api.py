@@ -21,7 +21,8 @@ class UserModel(db.Model):
 userFields = {
     'id': fields.Integer,
     'name': fields.String,
-    'email': fields.String
+    'email': fields.String,
+    'job': fields.String
 }
 
 User_args = reqparse.RequestParser()
